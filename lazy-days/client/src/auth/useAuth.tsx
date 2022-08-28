@@ -67,6 +67,7 @@ export function useAuth(): UseAuth {
   async function signin(email: string, password: string): Promise<void> {
     authServerCall('/signin', email, password);
   }
+
   async function signup(email: string, password: string): Promise<void> {
     authServerCall('/user', email, password);
   }
